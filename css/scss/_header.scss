@@ -1,0 +1,28 @@
+.header {
+  background: linear-gradient(135deg, $cor-principal, $cor-secundaria);
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  &--logo {
+    max-width: 200px;
+  }
+  &--lista {
+    display: flex;
+    flex-wrap: wrap;
+    &__item:nth-child(2) {
+      margin: 0 30px;
+    }
+    a {
+      padding: 10px;
+      color: $cor-padrao;
+      font-size: $font-small;
+      background: rgba(0,0,0,.1);
+      border-radius: 5px;
+      transition: 0.1s;
+      &:hover {
+        background: rgba(0,0,0,.5);
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.footer {
+  background: linear-gradient(135deg, $cor-principal, $cor-secundaria);
+  p {
+    color: $cor-padrao;
+    text-align: center;
+    padding: 20px;
+  }
+}

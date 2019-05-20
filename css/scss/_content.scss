@@ -1,0 +1,108 @@
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  &--titulo {
+    color: $cor-secundaria;
+    font-size: $font-titulo;
+    line-height: 1;
+    font-weight: 700;
+  }
+  &--span {
+    font-size: $font-little;
+    color: $cor-secundaria;
+    font-style: italic;
+  }
+  p {
+    font-size: $font-paragrafo;
+    line-height: 1.6;
+    letter-spacing: -0.005em;
+    color: rgba(0,0,0,.7);
+  }
+  &--infos {
+    display: flex;
+    align-items: flex-start;
+    div {
+      width: 80px;
+      text-align: center;
+      background: linear-gradient(135deg, $cor-principal, $cor-secundaria);
+      border-radius: 5px;
+      box-shadow: 5px 5px 15px 0px rgba(44,44,44,0.15);
+      position: relative;
+      &:first-child {
+        margin-right: 30px;
+      }
+      span {
+        display: block;
+        color: $cor-secundaria;
+      }
+    }
+    &__numeros {
+      font-size: $font-numeros;
+      line-height: 1;
+      margin: 10px auto;
+    }
+    &__rotulos {
+      background: $cor-padrao;
+      border-radius: 0 0 5px 5px;
+      padding: 5px 0;
+      position: relative;
+      top: 2px;
+    }
+  }
+  &--destaque {
+    font-size: $font-little !important;
+    color: $cor-secundaria !important;
+    max-width: 20em !important;
+  }
+  &--citacao, &--atributos {
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px 0px rgba(44,44,44,0.15);
+    background: linear-gradient(135deg, $cor-principal, $cor-secundaria);
+    align-self: flex-start;
+    p {
+      color: $cor-padrao;
+      font-size: $font-medium;
+      font-style: italic;
+      text-align: center;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    li {
+      color: $cor-padrao;
+      font-family: $font--atributos;
+      font-size: $font-small;
+      padding: 15px;
+      font-weight: bold;
+    }
+  }
+}
+
+.content--atributos {
+  li + li {
+    border-top: 2px solid $cor-secundaria;
+  }
+}
+
+.informacoes {
+  p + p {
+    margin-top: 30px;
+  }
+}
+
+.col-wide {
+  grid-column: 1 / -1;
+}
+
+.imagem-1 {
+  grid-row: span 2;
+  align-self: flex-end;
+}
+
+.imagem-2 {
+  align-self: flex-end;
+}
