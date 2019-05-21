@@ -82,6 +82,13 @@
   }
 }
 
+// RESPONSIVO
+@include d(l) {
+  .content {
+    grid-template-columns: auto; 
+  }
+}
+
 .content--atributos {
   li + li {
     border-top: 2px solid $cor-secundaria;

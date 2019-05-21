@@ -15,3 +15,33 @@ $font-medium: 1.5em;
 $font-paragrafo: 1.2em;
 $font-titulo: 3.75em;
 $font-numeros: 3em;
+
+// RESPONSIVO
+$s-device: 480px;
+$l-device: 600px;
+$m-device: 760px;
+$h-device: 1200px;
+
+@mixin d($size) {
+  @if $size == h {
+    @media (max-width: #{$h-device}) {
+      @content;
+    }
+  }
+}
+
+@mixin d($size) {
+  @if $size == m {
+    @media (max-width: #{$m-device}) {
+      @content;
+    }
+  }
+}
+
+@mixin d($size) {
+  @if $size == l {
+    @media (max-width: #{$l-device}) {
+      @content;
+    }
+  }
+}

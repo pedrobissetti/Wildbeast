@@ -26,3 +26,20 @@
     }
   }
 }
+
+@include d(m) {
+  .header {
+    grid-template-columns: auto;
+    &--logo {
+      margin-bottom: 20px;
+    }
+    &--lista {
+      &__item:nth-child(2) {
+        margin: 0 10px;
+      }
+      a {
+        font-size: 1em;
+      }
+    }
+  }
+}

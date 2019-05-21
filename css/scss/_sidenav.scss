@@ -15,3 +15,40 @@
     }
   }
 }
+
+@include d(m) {
+  .sidenav {
+    position: relative;
+    padding: 0 30px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    &::after {
+      content: '→';
+      position: absolute;
+      top: 5px;
+      right: 30px;
+      color: rgba(0,0,0,.3);
+      animation: seta .5s ease-in 0s infinite alternate;
+    }
+    ul {
+      display: flex;
+      li {
+        flex: 1 0 60px;
+        a {
+          margin: 30px 30px 30px 0;
+        }
+      }
+    }
+  }
+}
+
+// ANIMAÇÃO SETA
+@keyframes seta {
+  from {
+    right: 30px;
+  }
+  to {
+    right: 20px;
+  }
+}
