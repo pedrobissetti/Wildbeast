@@ -83,9 +83,9 @@
 }
 
 // RESPONSIVO
-@include d(l) {
+@media (max-width: 600px) {
   .content {
-    grid-template-columns: auto; 
+    grid-template-columns: auto;
   }
 }
 

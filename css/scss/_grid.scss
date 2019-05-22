@@ -10,7 +10,7 @@
 }
 
 // RESPONSIVO
-@include d(h) {
+@media (max-width: 1200px) {
   .estrutura {
     grid-template-areas: 
       "header header header"
@@ -21,7 +21,7 @@
   }
 }
 
-@include d(m) {
+@media (max-width: 760px) {
   .estrutura {
     grid-template-columns: 100%;
     grid-template-areas: 
